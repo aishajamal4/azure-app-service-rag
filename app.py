@@ -78,7 +78,7 @@ def ask():
     context_parts = []
 
     for result in results:
-        content = result.get("content")
+        content = result.get("snippet")
 
         if content:
             context_parts.append(content)
