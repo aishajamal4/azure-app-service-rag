@@ -1,46 +1,23 @@
-const chat = document.getElementById("chat");
 const questionInput = document.getElementById("question");
 const sendButton = document.getElementById("sendButton");
-const loading = document.getElementById("loading");
+const chat = document.getElementById("chat");
 
 
-function addMessage(message, type) {
+function addMessage(text, type) {
 
-    const messageDiv = document.createElement("div");
+    const message = document.createElement("div");
 
-    messageDiv.className = `message ${type}`;
+    message.className = `message ${type}`;
 
-    const avatar = document.createElement("div");
+    message.textContent = text;
 
-    avatar.className = "avatar";
-
-    avatar.textContent = type === "user" ? "You" : "AI";
-
-
-    const bubble = document.createElement("div");
-
-    bubble.className = "bubble";
-
-
-    const text = document.createElement("p");
-
-    text.textContent = message;
-
-
-    bubble.appendChild(text);
-
-    messageDiv.appendChild(avatar);
-
-    messageDiv.appendChild(bubble);
-
-    chat.appendChild(messageDiv);
-
+    chat.appendChild(message);
 
     chat.scrollTop = chat.scrollHeight;
 }
 
 
-async function askQuestion() {
+async function sendQuestion() {
 
     const question = questionInput.value.trim();
 
@@ -48,24 +25,12 @@ async function askQuestion() {
         return;
     }
 
-
-    // Show user's message
-
     addMessage(question, "user");
-
-
-    // Clear input
 
     questionInput.value = "";
 
-    questionInput.style.height = "auto";
-
-
-    // Disable button
-
     sendButton.disabled = true;
-
-    loading.classList.remove("hidden");
+    sendButton.textContent = "Loading...";
 
 
     try {
@@ -81,7 +46,6 @@ async function askQuestion() {
             body: JSON.stringify({
                 question: question
             })
-
         });
 
 
@@ -89,86 +53,43 @@ async function askQuestion() {
 
 
         if (!response.ok) {
-
-            throw new Error(
-                data.error || "Something went wrong."
-            );
-
+            throw new Error(data.error || "Request failed");
         }
 
 
-        addMessage(
-            data.answer || "No answer was returned.",
-            "assistant"
-        );
+        addMessage(data.answer, "bot");
 
 
     } catch (error) {
 
         addMessage(
-            "Sorry, I couldn't process your question. Please try again.",
-            "assistant"
+            "Error: " + error.message,
+            "bot"
         );
-
-        console.error(error);
 
     } finally {
 
-        loading.classList.add("hidden");
-
         sendButton.disabled = false;
+        sendButton.textContent = "Send";
 
         questionInput.focus();
-
     }
 }
 
 
-/* =========================
-   SEND BUTTON
-========================= */
-
 sendButton.addEventListener(
     "click",
-    askQuestion
+    sendQuestion
 );
 
-
-/* =========================
-   ENTER TO SEND
-========================= */
 
 questionInput.addEventListener(
     "keydown",
     function(event) {
 
-        if (
-            event.key === "Enter" &&
-            !event.shiftKey
-        ) {
-
-            event.preventDefault();
-
-            askQuestion();
-
+        if (event.key === "Enter") {
+            sendQuestion();
         }
-
-    }
-);
-
-
-/* =========================
-   AUTO RESIZE
-========================= */
-
-questionInput.addEventListener(
-    "input",
-    function() {
-
-        this.style.height = "auto";
-
-        this.style.height =
-            Math.min(this.scrollHeight, 130) + "px";
 
     }
 );
