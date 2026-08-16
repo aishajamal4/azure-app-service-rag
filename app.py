@@ -3,7 +3,7 @@ import os
 from flask import Flask, request, jsonify, render_template
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents import SearchClient
-from openai import AzureOpenAI
+from openai import OpenAI
 
 app = Flask(__name__)
 
@@ -36,11 +36,11 @@ search_client = SearchClient(
 # Azure OpenAI
 # =========================
 
-openai_client = AzureOpenAI(
-    azure_endpoint=OPENAI_ENDPOINT,
+openai_client = OpenAI(
     api_key=OPENAI_KEY,
-    api_version="2025-04-01-preview"
+    base_url=OPENAI_ENDPOINT
 )
+
 
 
 # =========================
