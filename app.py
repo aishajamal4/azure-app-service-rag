@@ -12,13 +12,13 @@ app = Flask(__name__)
 # Environment Variables
 # =========================
 
-SEARCH_ENDPOINT = os.environ["https://aisearchtraining0.search.windows.net"]
-SEARCH_KEY = os.environ["bJ1BbJLQbBGXk5ogvdirr6ipd1mbP6nwN0LMoeE4i7AzSeCpgZKJ"]
-SEARCH_INDEX = os.environ["knowledgesource-1786729607752-index"]
+SEARCH_ENDPOINT = os.environ["AZURE_SEARCH_ENDPOINT"]
+SEARCH_KEY = os.environ["AZURE_SEARCH_KEY"]
+SEARCH_INDEX = os.environ["AZURE_SEARCH_INDEX"]
 
-OPENAI_ENDPOINT = os.environ["https://yabulibdeh-0030-resource.openai.azure.com/openai/v1"]
-OPENAI_KEY = os.environ["5KWkkew2YJdtqcCbtUcay0wEdwKGJdctOKWHd44D2FCLNGI8bYs0JQQJ99CHACfhMk5XJ3w3AAAAACOGSj9m"]
-OPENAI_DEPLOYMENT = os.environ["gpt-5.4-mini"]
+OPENAI_ENDPOINT = os.environ["AZURE_OPENAI_ENDPOINT"]
+OPENAI_KEY = os.environ["AZURE_OPENAI_KEY"]
+OPENAI_DEPLOYMENT = os.environ["AZURE_OPENAI_DEPLOYMENT"]
 
 
 # =========================
