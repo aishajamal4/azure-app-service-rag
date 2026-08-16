@@ -6,144 +6,34 @@
 
     <title>RAG Assistant</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
-    <div class="app">
+    <div class="container">
 
-        <!-- Sidebar -->
-        <aside class="sidebar">
+        <h1>RAG Assistant</h1>
+        <p class="subtitle">Ask a question about your documents</p>
 
-            <div class="logo">
-                <div class="logo-icon">AI</div>
-
-                <div>
-                    <h2>RAG Assistant</h2>
-                    <span>AI Document Assistant</span>
-                </div>
+        <div id="chat" class="chat">
+            <div class="message bot">
+                Hello! Ask me a question about your documents.
             </div>
+        </div>
 
-            <div class="sidebar-content">
-                <p class="sidebar-title">About</p>
+        <div class="input-area">
+            <input
+                type="text"
+                id="question"
+                placeholder="Type your question..."
+            >
 
-                <p class="description">
-                    Ask questions about your documents and get
-                    answers based on the available information.
-                </p>
-
-                <div class="status">
-                    <span class="status-dot"></span>
-                    <span>System Online</span>
-                </div>
-            </div>
-
-            <div class="sidebar-footer">
-                Powered by Azure AI
-            </div>
-
-        </aside>
-
-
-        <!-- Main Chat -->
-        <main class="chat-container">
-
-            <!-- Header -->
-            <header class="chat-header">
-
-                <div>
-                    <h1>Document Assistant</h1>
-                    <p>Ask anything about your documents</p>
-                </div>
-
-                <div class="online-badge">
-                    <span></span>
-                    Online
-                </div>
-
-            </header>
-
-
-            <!-- Messages -->
-            <section id="chatMessages" class="chat-messages">
-
-                <!-- Welcome message -->
-                <div class="message assistant-message">
-
-                    <div class="avatar assistant-avatar">
-                        AI
-                    </div>
-
-                    <div class="message-content">
-
-                        <div class="message-name">
-                            RAG Assistant
-                        </div>
-
-                        <div class="bubble">
-                            Hello! 👋
-                            <br><br>
-                            I'm your document assistant.
-                            Ask me a question and I'll try to
-                            answer using the available documents.
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- Loading -->
-            <div id="loading" class="loading hidden">
-
-                <div class="avatar assistant-avatar">
-                    AI
-                </div>
-
-                <div class="typing">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <span class="thinking">
-                    Thinking...
-                </span>
-
-            </div>
-
-
-            <!-- Input -->
-            <div class="input-area">
-
-                <div class="input-wrapper">
-
-                    <textarea
-                        id="questionInput"
-                        placeholder="Ask a question about your documents..."
-                        rows="1"
-                    ></textarea>
-
-                    <button id="sendButton" type="button">
-                        <span>Send</span>
-                        <span class="send-icon">➤</span>
-                    </button>
-
-                </div>
-
-                <p class="input-hint">
-                    Press Enter to send • Shift + Enter for a new line
-                </p>
-
-            </div>
-
-        </main>
+            <button id="sendButton">Send</button>
+        </div>
 
     </div>
-
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 
