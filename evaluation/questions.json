@@ -1,0 +1,212 @@
+[
+  {
+    "question": "According to the GPT-4 Technical Report, how does GPT-4 compare to GPT-3.5 on the simulated Uniform Bar Examination?"
+  },
+  {
+    "question": "What are the hidden dimension size, number of layers, and total parameter count of the standard BERT model versus BERT-large?"
+  },
+  {
+    "question": "What are the three core scaffolding resources that augment a foundation language model to form an AI agent?"
+  },
+  {
+    "question": "In the standard transformer architecture, what is the mathematical formula for computing token-level LayerNorm?"
+  },
+  {
+    "question": "How does the common law doctrine of agency define the relationship between a principal and an agent?"
+  },
+  {
+    "question": "What score did GPT-4 achieve on the USABO Semifinal Exam 2020 compared to GPT-3.5?"
+  },
+  {
+    "question": "Which two unsupervised pre-training tasks were originally introduced to train the BERT model?"
+  },
+  {
+    "question": "What is the primary operational distinction between simple reflex agents and model-based reflex agents?"
+  },
+  {
+    "question": "What input formats does GPT-4 accept, and what format does it output?"
+  },
+  {
+    "question": "According to the AWS agent typology, how do utility-based agents differ from goal-based agents?"
+  },
+  {
+    "question": "What is the mathematical computational complexity of standard multi-head self-attention with respect to sequence length N, feature dimension D, and heads H?"
+  },
+  {
+    "question": "What dataset was used to assess GPT-4's ability to synthesize Python functions at varying complexity scales?"
+  },
+  {
+    "question": "How does the extractive approach to automated text summarization differ from the abstractive approach?"
+  },
+  {
+    "question": "What is the duty of loyalty under the Restatement (Third) of Agency, and what four specific actions does it prohibit?"
+  },
+  {
+    "question": "In the context of the GPT-4 project, what does predictable scaling refer to, and by what factor was compute reduced in smaller models to predict final loss?"
+  },
+  {
+    "question": "What are the two special tokens used by BERT to mark the beginning of an input sequence and the boundary between segments?"
+  },
+  {
+    "question": "How does the Restatement (Third) of Agency define a subagent, and under what two conditions may an agent appoint one?"
+  },
+  {
+    "question": "What is the maximum token sequence length that the basic BERT model can process as an input?"
+  },
+  {
+    "question": "What role do Rule-Based Reward Models (RBRMs) play in GPT-4's post-training alignment pipeline?"
+  },
+  {
+    "question": "What is the Liar's Dividend in the context of generative AI and synthetic media?"
+  },
+  {
+    "question": "Why does the standard transformer block apply self-attention using separate query (Uq) and key (Uk) projection matrices rather than a single shared linear transformation?"
+  },
+  {
+    "question": "How did the developers of RoBERTa alter BERT's text masking strategy and the Next Sentence Prediction (NSP) objective?"
+  },
+  {
+    "question": "What is the 'many hands problem' in algorithmic accountability, and how does it complicate tort liability for autonomous AI systems?"
+  },
+  {
+    "question": "How does the BERTScore metric compute similarity between a candidate sentence and a reference sentence?"
+  },
+  {
+    "question": "Why does fine-tuning language models with Reinforcement Learning from Human Feedback (RLHF) tend to degrade probability calibration?"
+  },
+  {
+    "question": "In the study of AI agent benchmarking by Kapoor et al., what are the primary criticisms leveled against current evaluation practices?"
+  },
+  {
+    "question": "How does Translation Language Modeling (TLM) in Cross-lingual Language Models (XLM) extend standard Masked Language Modeling (MLM)?"
+  },
+  {
+    "question": "What is catastrophic forgetting in the context of fine-tuning pre-trained language models like BERT, and what learning rate was found to mitigate it?"
+  },
+  {
+    "question": "What was the outcome of the Alignment Research Center's (ARC) evaluation of GPT-4's capacity for autonomous replication and resource acquisition?"
+  },
+  {
+    "question": "How does the four-quadrant AI Agent Typology categorize agents across the dimensions of autonomy and capabilities?"
+  },
+  {
+    "question": "What steps does the TEXTFOOLER algorithm follow to generate black-box adversarial textual examples against NLP models?"
+  },
+  {
+    "question": "Why is the reliance on human oversight and 'humans in the loop' described as a tautological challenge when monitoring superhuman AI agents?"
+  },
+  {
+    "question": "How does SciBERT differ from standard BERT in its pre-training data corpus and tokenization vocabulary?"
+  },
+  {
+    "question": "Why do traditional economic incentive mechanisms like pay-for-performance and financial penalties fail to deter or align AI agents?"
+  },
+  {
+    "question": "How does causal masking in auto-regressive transformers mathematically achieve the 'incremental update' property for token generation?"
+  },
+  {
+    "question": "What methodology did OpenAI use to evaluate GPT-4's potential contamination on academic benchmarks and professional exams?"
+  },
+  {
+    "question": "How does the performance of BioBERT compare to general BERT across biomedical Named Entity Recognition (NER), Relation Extraction (REL), and Question Answering (QA)?"
+  },
+  {
+    "question": "Under common law agency, what is the scope of an agent's authority regarding lawful instructions that are inherently ambiguous?"
+  },
+  {
+    "question": "How does the inclusion of Inverse Document Frequency (IDF) weights modify the basic cosine similarity calculation in BERTScore?"
+  },
+  {
+    "question": "What are the three core pillars of the AI agent governance strategy proposed by Noam Kolt to replace conventional agency mechanisms?"
+  },
+  {
+    "question": "In the chemical compound tool-use demonstration with GPT-4, what sequence of API tools did the agent chain together to locate a purchasable analog for Dasatinib?"
+  },
+  {
+    "question": "What is the difference between open-domain hallucinations and closed-domain hallucinations in GPT-4, and what distinct methods were used to mitigate each?"
+  },
+  {
+    "question": "How does the Vision Transformer (ViT) approach sequence classification compared to standard global spatial pooling across token representations?"
+  },
+  {
+    "question": "Why is the foreseeability standard in tort negligence problematic when applied to autonomous agentic architectures?"
+  },
+  {
+    "question": "How did GPT-4 perform across translated multilingual variants of the MMLU benchmark, particularly on low-resource languages?"
+  },
+  {
+    "question": "What is the difference between feature extraction (e.g., ELMo) and fine-tuning (e.g., GPT, BERT) approaches to transfer learning in NLP?"
+  },
+  {
+    "question": "Why does a fiduciary standard that imposes a higher duty of care on agents with specialized knowledge create perverse incentives for frontier AI labs?"
+  },
+  {
+    "question": "In the context of the Hindsight Neglect task from the Inverse Scaling Prize, how did GPT-4 behave relative to smaller OpenAI models?"
+  },
+  {
+    "question": "What is the structural role of residual connections in the transformer block, and how do they relate the architecture to dynamical systems or identity mappings?"
+  },
+  {
+    "question": "How does Goodhart's Law manifest in the alignment problem when training autonomous AI agents on proxy reward functions?"
+  },
+  {
+    "question": "Compare the mechanistic role of attention across tokens in transformers with convolutional layers in CNNs and message passing in Graph Neural Networks (GNNs)."
+  },
+  {
+    "question": "What is the difference between single-single alignment and pluralistic or societal-scale alignment in multi-agent environments?"
+  },
+  {
+    "question": "How do rule-based, statistical, neural, and hybrid approaches differ in their technical trade-offs when implementing AI agent architectures?"
+  },
+  {
+    "question": "Analyze how an agent's duty to keep the principal informed (Restatement § 8.11) conflicts with the current interpretability limitations of large language models."
+  },
+  {
+    "question": "How does the inclusion of an adversarial system message ('jailbreak') bypass RLHF safety alignments in GPT-4-launch, and what does this reveal about latent model capabilities?"
+  },
+  {
+    "question": "Why did RoBERTa's findings regarding batch sizes and Next Sentence Prediction contradict the design choices of the original BERT paper?"
+  },
+  {
+    "question": "How can the interaction between autonomous pricing agents result in tacit algorithmic collusion without explicit inter-firm communication?"
+  },
+  {
+    "question": "How does the chunking and chaining technique address the trade-off between long-term episodic memory storage and working memory context window constraints in AI agents?"
+  },
+  {
+    "question": "Evaluate how the common law concept of 'ratification' applies when a principal deploys an autonomous AI agent that commits an unexpected tortious act."
+  },
+  {
+    "question": "Why does the mathematical formulation of self-attention require scaling the dot product by the square root of the projection dimension (√D)?"
+  },
+  {
+    "question": "Compare the empirical performance degradation between non-contaminated and contaminated questions across GPT-4's AP exam evaluations."
+  },
+  {
+    "question": "How does the economic concept of information asymmetry (moral hazard vs. adverse selection) map onto the deployment lifecycle of an autonomous AI agent?"
+  },
+  {
+    "question": "What are the limitations of BLEU and METEOR metrics that prompted the development of embedding-based semantic evaluation metrics like BERTScore?"
+  },
+  {
+    "question": "How does an agent's use of external crowdworkers (e.g., TaskRabbit) to solve CAPTCHAs intersect with legal and technical definitions of delegation to subagents?"
+  },
+  {
+    "question": "What is the functional difference between intra-task, intra-subject, and cross-subject retraining datasets when fine-tuning BERT for domain-specific text classification?"
+  },
+  {
+    "question": "How does the multi-stage evaluation framework proposed by Krishnan progressively validate an agent's readiness from component level to full deployment?"
+  },
+  {
+    "question": "In what ways do foundation model developers use 'epistemic humility' and hedging language, and how can this unintentionally induce user overreliance?"
+  },
+  {
+    "question": "What structural role does position encoding play in the transformer architecture, and why does concatenation of position vectors mathematically reduce to additive encoding under linear projection?"
+  },
+  {
+    "question": "How does the concept of bounded rationality from behavioral economics challenge strict rational agent models in multi-agent decision systems?"
+  },
+  {
+    "question": "What are the key technical and governance bottlenecks identified across literature in establishing third-party audit access for frontier AI systems?"
+  }
+]
