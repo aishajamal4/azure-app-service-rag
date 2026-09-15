@@ -33,7 +33,7 @@ Flask API
 Chat UI
 ```
 
-## ✨ Main Features
+##  Main Features
 
 *  **Document-based Question Answering**
 *  **Semantic / Hybrid Search** using Azure AI Search
@@ -73,7 +73,7 @@ The evaluation dataset contains **70 questions**, and the generated responses we
 * **Answer Relevance:** Measures whether the answer directly addresses the user's question.
 * **Context Relevance:** Measures whether the retrieved context is relevant to the question.
 
-## 🛠️ Technologies
+##  Technologies
 
 * **Azure AI Search**
 * **Azure OpenAI**
@@ -83,13 +83,13 @@ The evaluation dataset contains **70 questions**, and the generated responses we
 * **LLM-as-a-Judge**
 * **Semantic / Hybrid Search**
 
-## 📌 Project Status
+##  Project Status
 
 The project is **still under development**.
 
 Future improvements will focus on improving retrieval quality, conversation context handling, reliability, and overall RAG performance.
 
-## 👩‍💻 Author
+##  Author
 
 **Aisha Bani-Amer**
 
